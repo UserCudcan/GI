@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神 Beta 1.4.50 安装步骤</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        ol {
+            margin: 20px 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>原神 Beta 1.4.50 安装步骤</h1>
+    <ol>
+        <li>
+            <strong>下载文件：</strong><br>
+            文件1：<a href="https://archive.org/download/yuanshen_beta_1.4.50/yuanshen_beta_1.4.50.zip" target="_blank">yuanshen_beta_1.4.50.zip</a><br>
+            文件2：<a href="https://archive.org/download/game_1.4.50_1.4.51_diff_DR9eYm8O/game_1.4.50_1.4.51_diff_DR9eYm8O.zip" target="_blank">game_1.4.50_1.4.51_diff_DR9eYm8O.zip</a><br>
+            下载16进制查看器：<a href="https://mh-nexus.de/en/downloads.php?product=HxD20" target="_blank">HxD20</a>
+        </li>
+        <li>下载上述两个文件并解压。</li>
+        <li>将“game”文件夹的内容复制到“yuanshen”文件夹中。</li>
+        <li>解压“win_debug.zip”的内容到“yuanshen”文件夹。</li>
+        <li>将“yuanshen.exe”重命名为“yuanshen1.exe”（或删除该文件）。<br>
+            然后将“Windowsplayer.exe”重命名为“yuanshen.exe”。</li>
+        <li>使用16进制查看器打开“YuanShen_Data/Native/UserAssembly.dll”，进行以下操作：<br>
+            点击“搜索” > “替换” > “字节序列”。<br>
+            搜索：“48 8B 05 5B 9E C3 05 48 8B 88 A0 00 00 00 40 88 B1 50 01 00 00”，<br>
+            替换为：“C6 81 50 01 00 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90”。<br>
+            保存文件。</li>
+        <li><strong>在打开游戏之前请务必断开互联网连接（非常重要）</strong>。</li>
+        <li>运行“yuanshen.exe”。</li>
+        <li>让我们开始游戏！<br>
+            （选择服务器界面时点击“go”）</li>
+        <li>（可选）将你的原神客户端创建快捷方式，重命名为“原神”，放入名为“原神”的文件夹中，使用1.bat和2.bat。</li>
+    </ol>
+</body>
+</html>
